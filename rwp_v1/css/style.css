@@ -1,0 +1,50 @@
+body {
+    font-family: "Plus Jakarta Sans", monospace;
+  }
+  
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .logo, .nav-links {
+      text-align: center;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-links.responsive {
+      display: block;
+      position: relative;
+    }
+    .nav-links a {
+      display: block;
+      padding: 10px;
+    }
+  }
+  
+  /* Beige and black color scheme */
+  body {
+    background-color: beige;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-links a {
+    color: black;
+  }
+  
+  .about-text, .experience-text {
+    color: black;
+  }
+  
+  .experience-item {
+    background-color: beige;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
