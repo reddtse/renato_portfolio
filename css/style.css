@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #FBF4DF;
+  --text-color: #000;
+}
+
+body {
+  background-color: var(--primary-color); /*FBF4DF*/
+  color: var(--text-color);
+    font-family: "Plus Jakarta Sans", monospace;
+  }
+
+  #navigation, #about, #experience, #education,
+  #assets, #contact {
+    padding: 40px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  
+  .logo {
+    float: left; /* To position the logo on the left */
+  }
+  
+  .nav-links {
+    float: right; /* To position the navigation buttons on the right */
+    display: flex; /* To align the navigation buttons horizontally */
+  }
+
+  .menu-con {
+    display: none;
+    font-size: 24px;
+    cursor: none;
+  }
+
+  .nav-links a {
+    color: #000000; 
+    background-color: none;
+    text-decoration: none; 
+    padding: 10px 15px;
+    margin: 0 5px; 
+    border-radius: 10px; 
+  }
+  
+  .nav-links a:hover {
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+    background-color: #a2e4b8; 
+   
+  }
+  
+  /*ABOUT*/
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .about-text {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    padding: 1rem;
+  }
+
+  .hire-buttons{
+    padding: 10px 15px;
+    margin: 0 5px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  h2.intro-name{
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #636363;
+  }
+  
+  h1.intro-name{
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  /*EXPERIENCE*/
+
+  #experience ul{
+    list-style: none;
+    float: right;
+    width: 80%;
+  }
+
+  .experience-container {
+    display: flex;
+  }
+
+  .experience-text p{
+    font-size: 16px;
+    color: #636363;
+  }
+  .experience-item {
+    background-color: #FBF4DF; /*f2efde*/
+    border: .5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 0px 0px #000000;
+    width: 70%;
+    float: right;
+  }
+
+  .experience-left {
+    float: left;
+    width: 25%;
+  }
+
+.experience-left img {
+  width: 30%;
+  height: auto;
+  text-align: left;
+  padding: 1rem;
+}
+
+  .experience-description{
+    display: none;
+  }
+
+  /*EDUCATION*/
+  .education-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .education-section-header {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .education-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    border: .5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 0px 0px #000000;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .education-item {
+    width: 25%; /* Reduce width to 25% so that 2 items fit in a row */
+    padding: 1rem;
+    text-align: left;
+    flex-shrink: 0; /* Prevent items from shrinking */
+  }
+  
+  .degree-header {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .school-name,
+  .graduation-date,
+  .major {
+    margin: 0;
+    font-size: 13px;
+    color: #636363;
+  }
+  
+  /*SKILLS*/
+
+
+  
+  /*BUTTONS*/
+
+  .expand-button, .cta-button {
+    color: #000000;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px; 
+    margin: 0 5px;
+    border-radius: 10px;
+    font-family: "Plus Jakarta Sans", monospace;
+  }
+  .expand-button:hover, .cta-button:hover {
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+    background-color: #5B57EB; 
+    color: #ffff;
+  }
+   
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */

@@ -4,18 +4,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/rwp_v1/css/style.css">	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap');
+	  </style>
 
 	<title>Renato Tan</title>
 </head>
 <body>
 	<div>
+
 		<!-- Navigation Section -->
-		<div>
+		<div id="navigation">
 		  <div class="logo">
 			<img src="logo.png" alt="Logo">
+		  </div>
+		  <div class="menu-icon" onclick="toggleNav()">
+			<i class="fa fa-bars"></i>
 		  </div>
 		  <div class="nav-links">
 			<a href="#about">About</a>
@@ -27,21 +35,35 @@
 		</div>
 	  
 		<!-- About Section -->
-		<div id="about">
+		<div id="about" class="clearfix">
 			<h1>About</h1>
 			<div class="about-content">
 			  <div class="about-text">
+				<h2 class="intro-name">Hi! I'm</h2>
+				<h1 class="intro-name">Renato</h1>
 				<p>With nearly 10 years’ experience in administration, customer service, sales, hospitality, sales and health services I have a record of strong communication, patient care, healthcare, multitasking, office organization, planning and administrative skills.</p>
+				<div class="hire-buttons">
+					<button id="hire-me" class="cta-button">Hire Me</button>
+					<button id="read-cv" class="cta-button">Read CV</button>
+				  </div>
 			  </div>
-			  <div class="about-image">
-				<img src="profile.jpg" alt="Profile Picture">
+			  <div> <!--note that the class="about-image" has been moved to tp the img tag-->
+				<img class="about-image
+				" 
+				 src="/img/profile.png" alt="Profile Picture">
 			  </div>
+			  
 			</div>
-		  </div>		  
+		</div>		  
 	  
 		<!-- Work Experience Section -->
-		<div id="experience">
+		<div id="experience" class="experience-main clearfix">
 			<h1>Work Experience</h1>
+		<div class="experience-container">
+			<div class="experience-left">
+				<img src="/img/circle_sets.png" alt="Image 1">
+    			<img src="/img/circle_sets.png" alt="Image 2">
+			</div>
 			<ul>
 			  <li class="experience-item">
 				<div class="experience-text">
@@ -219,25 +241,25 @@
 			</ul>
 
 		  </div>
+		</div>
+
+
 	  
 		<!-- Education Section -->
 		<div id="education" class="education-section">
-		  <h1 class="education-section-header">Education</h1>
-		  <ul>
-			<li>
-			  <h2>Degree</h2>
-			  <p>School Name</p>
-			  <p>Graduation Date</p>
-			  <p>Major</p>
-			</li>
-			<li>
-			  <h2>Degree</h2>
-			  <p>School Name</p>
-			  <p>Graduation Date</p>
-			  <p>Major</p>
-			</li>
-		  </ul>
-		</div>
+			<h1 class="education-section-header">Education</h1>
+			<ul class="education-list">
+			  <li class="education-item">
+				<h2 class="degree-header">BS Mar. Engineering</h2>
+				<p class="school-name">Palompon Institute of Technology</p>
+			  </li>
+			  <li class="education-item">
+				<h2 class="degree-header">Caregiving NCII</h2>
+				<p class="school-name">UCTZ UHA Caregiving Training Academy</p>
+			  </li>
+			</ul>
+		  </div>
+		  
 	  
 		<!-- Skills Section -->
 		<div id="assets-container">
@@ -287,5 +309,6 @@
 		<div id="footer">
 			<p>Copyright &copy; Renato</p>
 		  </div>
+	</div>
 </body>
 </html>
