@@ -10,7 +10,7 @@
     }
   
     #navigation, #skills, #education, #contact {
-      padding: 40px;
+      padding: 30px;
     }
   
     #about, #experience {
@@ -34,13 +34,7 @@
       float: right; /* To position the navigation buttons on the right */
       display: flex; /* To align the navigation buttons horizontally */
     }
-  
-    .menu-con {
-      display: none;
-      font-size: 24px;
-      cursor: none;
-    }
-  
+
     .nav-links a {
       color: #000000; 
       background-color: none;
@@ -68,13 +62,16 @@
     .about-text {
       padding: 1rem;
       font-size: 18px;
+      max-width: 50%;
     }
     
     .about-image {
       width: auto;
-      height: 60%;
-      text-align: right;
-      padding: 1rem;
+      height: 90%;
+      /* text-align: right; */
+      padding: 60px; /*1rem*/
+      margin-right: 5%;
+      float: right;
     }
     
     h2.intro-name{
@@ -89,19 +86,30 @@
       padding: 0;
       margin: 0;
     }
+
+    .about-text p {
+      font-size: 25px;
+    }
+
+    #about .about-content div:first-child {
+      width: 50%;
+      float: left;
+    }
+
   
     /*EXPERIENCE*/
-  
+
+    .experience-container {
+      display: flex;
+    }
+
     #experience ul{
       list-style: none;
       float: right;
       width: 80%;
+      transition: all 0.2s ease;
     }
-  
-    .experience-container {
-      display: flex;
-    }
-  
+
     .experience-text p{
       font-size: 14px;
       color: #636363;
@@ -114,12 +122,12 @@
       margin-bottom: 20px;
       box-shadow: 5px 5px 0px 0px #000000;
       width: 70%;
-      float: right;
+      float: left;
     }
   
     .experience-left {
       float: left;
-      width: 20%;
+      width: 30%;
     }
   
     .experience-description{
@@ -128,69 +136,29 @@
     .experience-description li{
       list-style-type: circle;
       padding: 5px 5px;
+      transition: all 0.2s ease;
     }
   
     /*CARD*/
-  
-    .projects {
-      width: auto;
-      height: auto;
-      text-align: left;
-      padding: 1rem;
-      display: inline-block;
-      flex-direction: row;
+    .project-card{
+      background-color: #FBF4DF;
+      border: .5px solid black;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 5px 5px 0px 0px #000000;
+      width:70%;
+      float: left;
     }
     
-    .project-card {
-      display: block;
-      flex-direction: row;
-      align-items: center;
-      background-color: transparent;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #000;
-      box-shadow: 5px 5px 0px 0px #000;
-      width: auto;
-      margin-bottom: 10px;
-      text-align: left;
-    }
-  
     .project-card img {
+      display: none;
       width: 100%;
       height: auto;
     }
-    
-    .project-card a {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 10px;
-      border-radius: 9px;
-      display: flex;
-      margin-top: 20px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: small;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  
-    .project-card a:hover{
-      background-color: #5B57EB;
-      color: #fff;
-      padding: 10px 10px;
-      border-radius: 9px;
-      display: flex;
-      margin-top: 20px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 5px 5px 0px 0px #000;
-      border: 1px #000 solid;
-    }
   
     .project-card h2, p {
-      padding: 0;
-      margin-bottom: 0;
+      font-size: 15px;
     }
      
     /*EDUCATION*/
@@ -299,6 +267,22 @@
       padding: 10px;
       transform: translateY(-2px);
     }
+
+
+    /*FOOTER*/
+
+    .redacted {
+      background-color: #FBF4DF;
+      color: #FBF4DF;
+      text-shadow: 0 0 5px a2e4b8;
+    }
+    
+    .redacted:hover {
+      background-color: transparent;
+      color: black;
+      text-shadow: none;
+    }
+    
     
     
     /*BUTTONS*/
@@ -323,6 +307,30 @@
       color: #ffff;
     }
   
+    .project-card a{
+      color: #000000;
+      background-color: transparent;
+      text-decoration: none;
+      padding: 10px 10px; 
+      margin: 5px 5px;
+      border-radius: 10px;
+      font-family: "Plus Jakarta Sans", monospace;
+      font-size: 13px;
+      border: 1px solid #000000;
+      transition: all 0.2s ease;
+    }
+  
+    .project-card a:hover{
+      background-color: #5B57EB;
+      color: #fff;
+      padding: 10px 10px;
+      border-radius: 9px;
+      margin: 5px 5px;
+      text-decoration: none;
+      box-shadow: 5px 5px 0px 0px #000;
+      border: 1px #000 solid;
+    }
+
     .hire-buttons{
       padding: 10px 15px;
       margin: 0 5px; 
