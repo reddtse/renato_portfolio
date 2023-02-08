@@ -7,13 +7,15 @@
 //     });
 
 $(document).ready(function() {
-    $(".expand-button").click(function() {
+  var isExpanded = false;
+  $(".expand-button").click(function() {
     var description = $(this).closest(".experience-item").find(".experience-description");
     description.slideToggle(500);
-    if (description.is(':visible')) {
+    isExpanded = !isExpanded;
+    if (isExpanded) {
         $(this).text("Collapse");
-      } else {
+    } else {
         $(this).text("Expand");
-      }
-    });
+    }
+});
 });

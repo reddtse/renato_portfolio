@@ -1,0 +1,10 @@
+//expand button
+
+document.querySelectorAll(".expand-button").forEach(function(button) {
+  button.addEventListener("click", function() {
+  const experienceDescription = this.nextElementSibling;
+  experienceDescription.style.display = (experienceDescription.style.display === "none") ? "block" : "none";
+  });
+  });
+
+  

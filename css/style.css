@@ -185,6 +185,7 @@
       text-decoration: none;
       transition: all 0.3s ease;
       box-shadow: 5px 5px 0px 0px #000;
+      border: 1px #000 solid;
     }
   
     .project-card h2, p {
@@ -297,7 +298,6 @@
       border: 1px solid #000000;
       padding: 10px;
       transform: translateY(-2px);
-  
     }
     
     
@@ -366,7 +366,7 @@
       }
       }
   
-  
+  /*ART*/
   
   
   
