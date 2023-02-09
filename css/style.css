@@ -1,382 +1,421 @@
 :root {
-    --primary-color: #FBF4DF;
-    --text-color: #000;
+  --primary-color: #FBF4DF;
+  --text-color: #000;
+}
+
+body {
+  background-color: var(--primary-color);
+  /*FBF4DF*/
+  color: var(--text-color);
+  font-family: "Plus Jakarta Sans", monospace;
+}
+
+#navigation,
+#skills,
+#education,
+#contact {
+  padding: 30px;
+}
+
+#about,
+#experience {
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#navigation .logo img {
+  float: left;
+  /* To position the logo on the left */
+  width: 100px;
+  height: 50px;
+}
+
+.nav-links {
+  float: right;
+  /* To position the navigation buttons on the right */
+  display: flex;
+  /* To align the navigation buttons horizontally */
+}
+
+.nav-links a {
+  color: #000000;
+  background-color: none;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  background-color: #a2e4b8;
+  transition: all 0.3s ease;
+}
+
+/*ABOUT*/
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-text {
+  padding: 1rem;
+  font-size: 18px;
+  max-width: 50%;
+}
+
+.about-image {
+  width: auto;
+  height: 90%;
+  /* text-align: right; */
+  padding: 60px;
+  /*1rem*/
+  margin-right: 5%;
+  float: right;
+  z-index: -1;
+}
+
+h2.intro-name {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  color: #636363;
+}
+
+h1.intro-name {
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-text p {
+  font-size: 25px;
+}
+
+#about .about-content div:first-child {
+  width: 50%;
+  float: left;
+}
+
+/*ART*/
+
+.bg_1 {
+  width: auto;
+  height: 20%;
+  position: absolute;
+  animation: moveDiagonal 5s ease-in-out infinite;
+}
+
+@keyframes moveDiagonal {
+  0% {
+    transform: translateX(50%) translateY(-50%);
   }
-  
-  body {
-    background-color: var(--primary-color); /*FBF4DF*/
-    color: var(--text-color);
-      font-family: "Plus Jakarta Sans", monospace;
-    }
-  
-    #navigation, #skills, #education, #contact {
-      padding: 30px;
-    }
-  
-    #about, #experience {
-      padding: 20px;
-    }
-  
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  
-    
-    #navigation .logo img {
-      float: left; /* To position the logo on the left */
-      width: 100px;
-      height: 50px;
-    }
-    
-    .nav-links {
-      float: right; /* To position the navigation buttons on the right */
-      display: flex; /* To align the navigation buttons horizontally */
-    }
 
-    .nav-links a {
-      color: #000000; 
-      background-color: none;
-      text-decoration: none; 
-      padding: 10px 15px;
-      margin: 0 5px; 
-      border-radius: 10px; 
-    }
-    
-    .nav-links a:hover {
-      border: 1px solid #000000;
-      box-shadow: 5px 5px 0px 0px #000000;
-      background-color: #a2e4b8; 
-      transition: all 0.3s ease;
-    }
-    
-    /*ABOUT*/
-  
-    .about-content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    
-    .about-text {
-      padding: 1rem;
-      font-size: 18px;
-      max-width: 50%;
-    }
-    
-    .about-image {
-      width: auto;
-      height: 90%;
-      /* text-align: right; */
-      padding: 60px; /*1rem*/
-      margin-right: 5%;
-      float: right;
-    }
-    
-    h2.intro-name{
-      font-size: 24px;
-      padding: 0;
-      margin: 0;
-      color: #636363;
-    }
-    
-    h1.intro-name{
-      font-size: 80px;
-      padding: 0;
-      margin: 0;
-    }
+  50% {
+    transform: translateX(-50%) translateY(50%);
+  }
 
-    .about-text p {
-      font-size: 25px;
-    }
-
-    #about .about-content div:first-child {
-      width: 50%;
-      float: left;
-    }
-
-  
-    /*EXPERIENCE*/
-
-    .experience-container {
-      display: flex;
-    }
-
-    #experience ul{
-      list-style: none;
-      float: right;
-      width: 80%;
-      transition: all 0.2s ease;
-    }
-
-    .experience-text p{
-      font-size: 14px;
-      color: #636363;
-    }
-    .experience-item {
-      background-color: #FBF4DF; /*f2efde*/
-      border: .5px solid black;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 5px 5px 0px 0px #000000;
-      width: 70%;
-      float: left;
-    }
-  
-    .experience-left {
-      float: left;
-      width: 30%;
-    }
-  
-    .experience-description{
-      display: none;
-    }
-    .experience-description li{
-      list-style-type: circle;
-      padding: 5px 5px;
-      transition: all 0.2s ease;
-    }
-  
-    /*CARD*/
-    .project-card{
-      background-color: #FBF4DF;
-      border: .5px solid black;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 5px 5px 0px 0px #000000;
-      width:70%;
-      float: left;
-    }
-    
-    .project-card img {
-      display: none;
-      width: 100%;
-      height: auto;
-    }
-  
-    .project-card h2, p {
-      font-size: 15px;
-    }
-     
-    /*EDUCATION*/
-    .education-section {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    .education-section-header {
-      width: 100%;
-      text-align: left;
-    }
-    
-    .education-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: nowrap;
-      border: .5px solid black;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 5px 5px 0px 0px #000000;
-      justify-content: space-between;
-      width: 50%;
-    }
-    
-    .education-item {
-      width: 25%; /* Reduce width to 25% so that 2 items fit in a row */
-      padding: 1rem;
-      text-align: left;
-      flex-shrink: 0; /* Prevent items from shrinking */
-    }
-    
-    .degree-header {
-      margin: 0;
-      font-size: 18px;
-    }
-    
-    .school-name,
-    .graduation-date,
-    .major {
-      margin: 0;
-      font-size: 13px;
-      color: #636363;
-    }
-    
-    /*SKILLS*/
-    .skill-set ul{
-      list-style: none;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 20px;
-      margin-right: 1rem;
-      border: #000 .5px solid;
-      border-radius: 10px;
-      box-shadow: 5px 5px 0px 0px #000000;
-    }
-    
-    .skill-set li{
-      margin: 10px;
-      transition: all 0.3s ease;
-    }
-  
-    .skill-set li:hover{
-      border: 1px solid #000000;
-      box-shadow: 5px 5px 0px 0px #000000;
-      background-color: #5B57EB; 
-      color: #ffff;
-      padding: 10px 15px;
-      transform: translateY(-2px);
-    }
-    
-  
-    /*CONTACT*/
-  
-    #contact-links {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-    }
-  
-    #contact-links a {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      text-decoration: none;
-      color: #000;
-    }
-    
-    #contact-links img {
-      height: 25px;
-      margin-right: 10px;
-    }
-  
-    .contact-link {
-      margin: 10px;
-      transition: all 0.3s ease;
-      
-    }
-  
-    .contact-link:hover {
-      border: 1px solid #000000;
-      padding: 10px;
-      transform: translateY(-2px);
-    }
+  100% {
+    transform: translateX(50%) translateY(-50%);
+  }
+}
 
 
-    /*FOOTER*/
+/*EXPERIENCE*/
 
-    .redacted {
-      background-color: #FBF4DF;
-      color: #FBF4DF;
-      text-shadow: 0 0 5px a2e4b8;
-    }
-    
-    .redacted:hover {
-      background-color: transparent;
-      color: black;
-      text-shadow: none;
-    }
-    
-    
-    
-    /*BUTTONS*/
-  
-    .expand-button, .cta-button {
-      color: #000000;
-      background-color: transparent;
-      text-decoration: none;
-      padding: 10px 15px; 
-      margin: 5px 5px;
-      border-radius: 10px;
-      font-family: "Plus Jakarta Sans", monospace;
-      border: 1px solid #000000;
-      transition: all 0.2s ease;
-  
-    }
-    
-    .expand-button:hover{
-      border: 1px solid #000000;
-      box-shadow: 5px 5px 0px 0px #000000;
-      background-color: #5B57EB; 
-      color: #ffff;
-    }
-  
-    .project-card a{
-      color: #000000;
-      background-color: transparent;
-      text-decoration: none;
-      padding: 10px 10px; 
-      margin: 5px 5px;
-      border-radius: 10px;
-      font-family: "Plus Jakarta Sans", monospace;
-      font-size: 13px;
-      border: 1px solid #000000;
-      transition: all 0.2s ease;
-    }
-  
-    .project-card a:hover{
-      background-color: #5B57EB;
-      color: #fff;
-      padding: 10px 10px;
-      border-radius: 9px;
-      margin: 5px 5px;
-      text-decoration: none;
-      box-shadow: 5px 5px 0px 0px #000;
-      border: 1px #000 solid;
-    }
+.experience-container {
+  display: flex;
+}
 
-    .hire-buttons{
-      padding: 10px 15px;
-      margin: 0 5px; 
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  
-    .cta-button a {
-      text-decoration: none;
-      color: #000;
-    }  
-  
-  
-    .cta-button:hover a {
-      color: #ffff;
-    }
-     
-    .cta-button:hover{
-      border: 1px solid #000000;
-      box-shadow: 5px 5px 0px 0px #000000;
-      background-color: #5B57EB; /*5B57EB*/
-    }
-  
-  
-    /*FOOTER*/
-    #footer {
-      text-align: center;
-      }
-      
-      #renato {
-      animation: flip-slow .5s ease-in-out infinite;
-      }
-      
-      @keyframes flip-slow {
-      0% {
-      transform: rotateY(0deg);
-      }
-      100% {
-      transform: rotateY(360deg);
-      }
-      }
-  
-  /*ART*/
-  
-  
-  
-  /* RESPONSIVE DESIGN */
-  
+#experience ul {
+  list-style: none;
+  float: right;
+  width: 80%;
+  transition: all 0.2s ease;
+}
+
+.experience-text p {
+  font-size: 14px;
+  color: #636363;
+}
+
+.experience-item {
+  background-color: #FBF4DF;
+  /*f2efde*/
+  border: .5px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 0px 0px #000000;
+  width: 70%;
+  float: left;
+}
+
+.experience-left {
+  float: left;
+  width: 30%;
+}
+
+.experience-description {
+  display: none;
+}
+
+.experience-description li {
+  list-style-type: circle;
+  padding: 5px 5px;
+  transition: all 0.2s ease;
+}
+
+/*CARD*/
+.project-card {
+  background-color: #FBF4DF;
+  border: .5px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 0px 0px #000000;
+  width: 70%;
+  float: left;
+}
+
+.project-card img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.project-card h2,
+p {
+  font-size: 15px;
+}
+
+/*EDUCATION*/
+.education-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-section-header {
+  width: 100%;
+  text-align: left;
+}
+
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  border: .5px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 0px 0px #000000;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.education-item {
+  width: 25%;
+  /* Reduce width to 25% so that 2 items fit in a row */
+  padding: 1rem;
+  text-align: left;
+  flex-shrink: 0;
+  /* Prevent items from shrinking */
+}
+
+.degree-header {
+  margin: 0;
+  font-size: 18px;
+}
+
+.school-name,
+.graduation-date,
+.major {
+  margin: 0;
+  font-size: 13px;
+  color: #636363;
+}
+
+/*SKILLS*/
+.skill-set ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-right: 1rem;
+  border: #000 .5px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #000000;
+}
+
+.skill-set li {
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.skill-set li:hover {
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  background-color: #5B57EB;
+  color: #ffff;
+  padding: 10px 15px;
+  transform: translateY(-2px);
+}
+
+
+/*CONTACT*/
+
+#contact-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#contact-links a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+#contact-links img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.contact-link {
+  margin: 10px;
+  transition: all 0.3s ease;
+
+}
+
+.contact-link:hover {
+  border: 1px solid #000000;
+  padding: 10px;
+  transform: translateY(-2px);
+}
+
+
+/*FOOTER*/
+
+.redacted {
+  background-color: #FBF4DF;
+  color: #FBF4DF;
+  text-shadow: 0 0 5px a2e4b8;
+}
+
+.redacted:hover {
+  background-color: transparent;
+  color: black;
+  text-shadow: none;
+}
+
+
+
+/*BUTTONS*/
+
+.expand-button,
+.cta-button {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans", monospace;
+  border: 1px solid #000000;
+  transition: all 0.2s ease;
+
+}
+
+.expand-button:hover {
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  background-color: #5B57EB;
+  color: #ffff;
+}
+
+.project-card a {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans", monospace;
+  font-size: 13px;
+  border: 1px solid #000000;
+  transition: all 0.2s ease;
+}
+
+.project-card a:hover {
+  background-color: #5B57EB;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 9px;
+  margin: 5px 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 0px 0px #000;
+  border: 1px #000 solid;
+}
+
+.hire-buttons {
+  padding: 10px 15px;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cta-button a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.cta-button:hover a {
+  color: #ffff;
+}
+
+.cta-button:hover {
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  background-color: #5B57EB;
+  /*5B57EB*/
+}
+
+
+/*FOOTER*/
+#footer {
+  text-align: center;
+}
+
+#renato {
+  animation: flip-slow .5s ease-in-out infinite;
+}
+
+@keyframes flip-slow {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+/* RESPONSIVE DESIGN */
