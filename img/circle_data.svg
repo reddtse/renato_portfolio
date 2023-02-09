@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>circle_data</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="circle_data" transform="translate(0.352386, 0.304951)">
+            <g id="Group-2" transform="translate(0.598467, 0.598867)"></g>
+            <g id="g1126" transform="translate(40.100632, 40.101032) scale(-1, 1) rotate(-180.000000) translate(-40.100632, -40.101032) translate(0.598467, 0.598867)" fill="#A2E4B8" fill-rule="nonzero">
+                <path d="M79.0043314,65.4493317 C60.9309985,83.5226646 31.6283325,83.5226646 13.5549997,65.4493317 C-4.51833322,47.3759988 -4.51833322,18.0733329 13.5549997,0 L79.0043314,65.4493317 Z" id="path1128"></path>
+            </g>
+            <path d="M0,19.4179995 C25.890666,-6.4726665 67.8653316,-6.4726665 93.7559977,19.4179995 C119.64533,45.3073322 119.64533,87.2833312 93.7559977,113.173997 L0,19.4179995 Z" id="path1132" fill="#5B57EB" fill-rule="nonzero" transform="translate(56.586499, 56.586999) scale(-1, 1) rotate(-180.000000) translate(-56.586499, -56.586999) "></path>
+            <g id="circle_center" transform="translate(48.467065, 48.242399) scale(-1, 1) rotate(-180.000000) translate(-48.467065, -48.242399) translate(27.089066, 26.863733)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M42.7559989,21.3786661 C42.7559989,9.57199976 33.1839992,0 21.3773328,0 C9.57066643,0 0,9.57199976 0,21.3786661 C0,33.1853325 9.57066643,42.7573323 21.3773328,42.7573323 C33.1839992,42.7573323 42.7559989,33.1853325 42.7559989,21.3786661" id="path1136"></path>
+            </g>
+        </g>
+    </g>
+</svg>

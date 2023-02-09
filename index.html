@@ -31,7 +31,7 @@
 			</div>
 			<div class="nav-links">
 				<a href="#about">About</a>
-				<a href="#experience">Experience</a>
+				<a href="#experience">Works</a>
 				<a href="#education">Education</a>
 				<a href="#skills">Skills</a>
 				<a href="#contact">Contact Me</a>
@@ -53,9 +53,9 @@
 						<button id="read-cv" class="cta-button"><a href="#experience">Read CV</a></button>
 					</div>
 				</div>
-				<div>
-					<img class="about-image" src="/img/profile_illustration.svg" alt="Profile Picture">
-					<img src="/img/cloud_icon.svg" alt="Cloud Image" class="about-image bg_1">
+				<div class="about-image-container">
+					<canvas class="topographic-map-chart" id="topoChart"></canvas>
+
 				</div>
 			</div>
 		</div>
@@ -70,15 +70,19 @@
 						<div class="project-card">
 							<img src="/img/blocks_set.png" alt="Project 1 Image">
 							<h2>Data Analysis using Jupyter</h2>
-							<p>Project description here</p>
-							<a href="https://project1-website.com" target="_blank">See project</a>
+							<p id="project-description">Project description here</p>
+
+							<a href="https://project1-website.com" target="_blank">Show</a>
 						</div>
+
 						<div class="project-card">
 							<img src="/img/circle_sets.png" alt="Project 2 Image">
 							<h2>Project 2</h2>
 							<p>Project description here</p>
-							<a href="https://project1-website.com" target="_blank">See project</a>
+							<a href="https://project1-website.com" target="_blank">Show</a>
 						</div>
+
+
 						<!-- Add more project cards here -->
 					</div>
 				</div>
@@ -290,9 +294,8 @@
 				</ul>
 
 			</div>
+
 		</div>
-
-
 
 		<!-- Education Section -->
 		<div id="education" class="education-section">

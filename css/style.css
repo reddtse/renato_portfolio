@@ -73,17 +73,6 @@ body {
   max-width: 50%;
 }
 
-.about-image {
-  width: auto;
-  height: 90%;
-  /* text-align: right; */
-  padding: 60px;
-  /*1rem*/
-  margin-right: 5%;
-  float: right;
-  z-index: -1;
-}
-
 h2.intro-name {
   font-size: 24px;
   padding: 0;
@@ -101,34 +90,18 @@ h1.intro-name {
   font-size: 25px;
 }
 
-#about .about-content div:first-child {
+.about-image-container {
   width: 50%;
   float: left;
+  max-width: auto;
 }
 
-/*ART*/
-
-.bg_1 {
-  width: auto;
-  height: 20%;
+.topographic-map-chart {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   position: absolute;
-  animation: moveDiagonal 5s ease-in-out infinite;
 }
-
-@keyframes moveDiagonal {
-  0% {
-    transform: translateX(50%) translateY(-50%);
-  }
-
-  50% {
-    transform: translateX(-50%) translateY(50%);
-  }
-
-  100% {
-    transform: translateX(50%) translateY(-50%);
-  }
-}
-
 
 /*EXPERIENCE*/
 
@@ -197,6 +170,7 @@ h1.intro-name {
 p {
   font-size: 15px;
 }
+
 
 /*EDUCATION*/
 .education-section {
@@ -272,6 +246,8 @@ p {
   padding: 10px 15px;
   transform: translateY(-2px);
 }
+
+/*ART*/
 
 
 /*CONTACT*/
@@ -358,12 +334,13 @@ p {
   font-size: 13px;
   border: 1px solid #000000;
   transition: all 0.2s ease;
+  float: right;
 }
 
 .project-card a:hover {
   background-color: #5B57EB;
   color: #fff;
-  padding: 10px 10px;
+  padding: 10px 15px;
   border-radius: 9px;
   margin: 5px 5px;
   text-decoration: none;
@@ -419,3 +396,179 @@ p {
 
 
 /* RESPONSIVE DESIGN */
+
+/* Media query for devices with minimum width of 320px and maximum width of 480px */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #about {
+    font-size: 12px;
+  }
+
+  #experience {
+    box-shadow: none;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .project-card button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .experience-description {
+    display: none;
+  }
+
+
+  #education,
+  #skills {
+    box-shadow: none;
+  }
+
+  #contact {
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+  #about {
+    font-size: 10px;
+  }
+
+  #experience {
+    box-shadow: none;
+  }
+
+  .project-card {
+    /* Keep the title of the card */
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .project-card button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .experience-description {
+    display: none;
+  }
+
+}
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 14px;
+    }
+
+
+    #education,
+    #skills {
+      box-shadow: none;
+    }
+
+    #contact {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 12px;
+    }
+
+    #education,
+    #skills {
+      box-shadow: none;
+    }
+
+    #contact {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 18px;
+    }
+
+    #education,
+    #skills {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (min-width: 1224px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 22px;
+    }
+
+    #education,
+    #skills {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (min-width: 1824px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 26px;
+    }
+
+    #education,
+    #skills {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 3)
+  and (min-resolution: 192dpi) and (max-width:640px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 18px;
+    }
+
+    #education,
+    #skills {
+      box-shadow: none;
+    }
+
+    #contact {
+      width: 100%;
+    }
+  }

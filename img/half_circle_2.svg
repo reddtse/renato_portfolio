@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="131px" height="132px" viewBox="0 0 131 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>half_circle_2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="data_circle" transform="translate(-3.010485, -3.616651)" fill="#A2E4B8" fill-rule="nonzero">
+            <g id="half_circle_2" transform="translate(68.641698, 69.640598) scale(-1, 1) rotate(-180.000000) translate(-68.641698, -69.640598) translate(3.264200, 4.262933)">
+                <path d="M108.319997,130.75533 L0,22.4339994 C29.9106659,-7.47799981 78.407998,-7.47799981 108.319997,22.4339994 C138.23333,52.3459987 138.23333,100.843331 108.319997,130.75533" id="path900"></path>
+            </g>
+        </g>
+    </g>
+</svg>
